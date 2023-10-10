@@ -45,7 +45,7 @@ const signatureWidget = {
                         titleNode.innerHTML = sanitizeHTML(propValue);
                         break;
                     default:
-                        console.error('unsupported property', propName);
+                        // ignore
                         break;
                 }
             },
