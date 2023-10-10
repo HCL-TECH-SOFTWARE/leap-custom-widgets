@@ -4,7 +4,7 @@ This project brings the following sample widgets to Leap:
 - a 5-star Rating (https://mui.com/material-ui/react-rating/)
 - a Switch (https://mui.com/material-ui/react-switch/)  
   
-Note: This project was generated with [create-react-app](https://github.com/facebook/create-react-app), including portions of this README.
+Note: This project was generated with [Vite](https://vitejs.dev/).
 
 ## Sample Objectives 
 This sample demonstrates the following: 
@@ -16,19 +16,11 @@ This sample demonstrates the following:
 1. Clone this repo. For example:  
  `git clone https://github.com/HCL-TECH-SOFTWARE/leap-custom-widgets.git`
 1. `cd leap-custom-widgets/samples/mui-widgets`
-1.  `npm install`
+1. `npm install`
 
 
-## From Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-## Available Scripts
+## Scripts
 
 In the project directory, you can run:
 
@@ -55,7 +47,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 Example to incorporate into Leap:
 ```properties
 ibm.nitro.NitroConfig.runtimeResources.1 = \
-<script type='text/javascript' src='http://localhost:4173/assets/index-fa54fabc.js'></script>
+<link rel='stylesheet' type='text/css' media='screen' href='http://localhost:4173/assets/index-4d2243fc.css'> \n\
+<script type='module' src='http://localhost:4173/assets/index-fa54fabc.js'></script>
 ```
 
+## From Vite
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
