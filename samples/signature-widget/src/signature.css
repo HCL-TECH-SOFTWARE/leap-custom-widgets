@@ -1,0 +1,30 @@
+/* Styles for sample Signature widget */
+
+.hcl-leap-sample-signatureIcon {
+    background-image: url('./signature.svg') !important;
+    background-size: 16px !important;
+    width: 16px;
+    height: 16px;
+}
+
+.hcl-leap-sample-signature.disabled {
+    cursor: not-allowed;
+}
+
+.hcl-leap-sample-signature canvas {
+    border: 2px solid #707070;
+    border-radius: 3px;
+}
+
+.hcl-leap-sample-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.hcl-leap-sample-button {
+    background: white;
+    border: 1px solid #424242;
+    border-radius: 3px;
+    padding: 4px 16px;
+}

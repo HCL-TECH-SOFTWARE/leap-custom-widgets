@@ -1,0 +1,48 @@
+/* Styles for sample Notification widget */
+
+.leapSampleNotificationIcon {
+    background-image: url('./notification.svg') !important;
+    background-size: 16px !important;
+    width: 16px;
+    height: 16px;
+}
+
+.leapSampleNotification {
+    border: 1px solid; 
+    border-radius: 8px;
+    padding: 0 16px 12px 48px;
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    background-size: 24px 24px;
+}
+.leapSampleNotification h2.leapSampleHeading {
+    margin: 12px 8px;
+}
+.leapSampleNotification p.leapSampleContent {
+    margin: 8px;
+}
+
+.leapSampleNotification.success {
+    color: rgb(30, 70, 32); /* dark green */
+    border-color: rgb(76, 175, 80); /* medium green */
+    background-color: rgb(237, 247, 237); /* light green */
+    background-image: url('success.svg');
+}
+.leapSampleNotification.info {
+    color: rgb(1, 67, 97); /* dark blue */
+    border-color: rgb(3, 169, 244); /* medium blue */
+    background-color: rgb(229, 246, 253); /* light blue */
+    background-image: url('information.svg');
+}
+.leapSampleNotification.warn {
+    color: rgb(102, 60, 0); /* dark orange */
+    border-color: rgb(255, 152, 0); /* medium orange */
+    background-color: rgb(255, 244, 229); /* light orange */
+    background-image: url('warning.svg');
+}
+.leapSampleNotification.error {
+    color: rgb(95, 33, 32); /* dark red */
+    border-color: rgb(239, 83, 80); /* medium red */
+    background-color: rgb(253, 237, 237); /* light red */
+    background-image: url('error.svg');
+}

@@ -1,0 +1,9 @@
+.hcl-leap-sample-switchIcon {
+  background-image: url('./assets/boolean.svg');
+  background-size: 16px;
+}
+
+.hcl-leap-sample-ratingIcon {
+  background-image: url('./assets/star.svg');
+  background-size: 16px;
+}
