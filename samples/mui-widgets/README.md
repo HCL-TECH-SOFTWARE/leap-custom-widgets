@@ -3,6 +3,8 @@
 This project brings the following sample widgets to Leap:
 - a 5-star Rating (https://mui.com/material-ui/react-rating/)
 - a Switch (https://mui.com/material-ui/react-switch/)  
+
+![screenshot](screenshot.png)
   
 Note: This project was generated with [Vite](https://vitejs.dev/).
 

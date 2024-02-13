@@ -2,7 +2,7 @@
 
 A sample widget that collects a "scribble" signature from the user, utilizing the  [signature_pad]([https://](https://github.com/szimek/signature_pad)) library.
 
-
+![screenshot](screenshot.png)
 
 ## Sample Objectives
 This sample demonstrates the following:
@@ -16,7 +16,7 @@ This sample demonstrates the following:
  `git clone https://github.com/HCL-TECH-SOFTWARE/leap-custom-widgets.git`
 1. `cd leap-custom-widgets/samples/signature-widget`
 2. `npm install`
-3. `npm build`  
+3. `npm run build`  
 
 The output of the build will be in the `dist/` directory.
 If you wish to make code changes to the sample, use `npm build-watch` to have the files building continuously. Refresh the browser to see recent changes.

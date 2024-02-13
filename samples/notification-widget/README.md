@@ -2,6 +2,8 @@
 
 A sample widget that displays info, success, warning, or error message.
 
+![screenshot](screenshot.png)
+
 
 ## Sample Objectives:
 This sample demonstrates the following:
