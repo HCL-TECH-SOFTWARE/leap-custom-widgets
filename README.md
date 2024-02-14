@@ -10,6 +10,6 @@ The **Custom Widget API** is described in the **Reference** section of the produ
 
 ## Samples
 Various samples are available in the [Samples](./samples) directory.  
-For example:
 
+Example:  
 ![alt text](screenshot.png)
