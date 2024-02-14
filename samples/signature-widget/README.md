@@ -1,6 +1,6 @@
 # Signature Widget (Sample)
 
-A sample widget that collects a "scribble" signature from the user, utilizing the  [signature_pad]([https://](https://github.com/szimek/signature_pad)) library.
+A sample widget that collects a "scribble" signature from the user, utilizing the  [signature_pad](https://github.com/szimek/signature_pad) library.
 
 ![screenshot](screenshot.png)
 
