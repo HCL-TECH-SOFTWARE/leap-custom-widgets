@@ -68,6 +68,10 @@ const signatureWidget = {
 
             getValue: function () {
                 return JSON.stringify(signaturePad.toData());
+            },
+
+            getDisplayTitle: function () {
+                return titleNode.innerHTML;
             }
         };
 

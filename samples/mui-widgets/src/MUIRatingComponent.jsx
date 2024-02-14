@@ -78,6 +78,10 @@ const muiRatingWidgetDef = {
         }
       },
 
+      getDisplayTitle: () => {
+        return title;
+      },
+
       /** for app authors to programatically interact with widget */
       getJSAPIFacade: () => {
         var facade = {

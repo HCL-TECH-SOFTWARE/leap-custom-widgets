@@ -72,6 +72,10 @@ const muiSwitchWidgetDef = {
           render();
         }
       },
+      
+      getDisplayTitle: () => {
+        return label;
+      },
 
       /** for app authors to programatically interact with widget */
       getJSAPIFacade: () => {

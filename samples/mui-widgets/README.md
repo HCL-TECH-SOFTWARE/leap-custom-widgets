@@ -37,14 +37,19 @@ ibm.nitro.NitroConfig.runtimeResources.1 = \
 
 ```
 
-Leap pages will reload when you make changes to this project's source.\
-You may also see any lint errors in the console.
+Notes:  
+- Leap pages will reload when you make changes to this project's source.  
+- You might also see lint errors in the console.  
+- **Known Issue:** Widget icons with not show up in development mode, because Vite does not allow for relative paths to the .svg files in dev mode.
 
 ### `npm run build`
 
 Builds for production, to the `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+### `npm run preview`
+
+As a follow-up to `npm run build`, this serves up built production assets at `localhost`.
 
 Example to incorporate into Leap:
 ```properties
