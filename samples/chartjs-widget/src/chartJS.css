@@ -1,0 +1,15 @@
+/*
+  Code for Donut Chart widget
+  ===========================
+*/
+
+.chartIcon {
+  width: 16px;
+  height: 16px;
+  background-image: url('chart--pie.svg');
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }

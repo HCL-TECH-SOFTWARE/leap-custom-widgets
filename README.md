@@ -4,9 +4,8 @@
 
 ## API
 The **Custom Widget API** is described in the **Reference** section of the product documentation:
-  - [Leap 9.3.5](https://opensource.hcltechsw.com/leap-doc/9.3.5/customwidgetapi_landing.html)
-  - [Leap 9.3.4](https://help.hcltechsw.com/Leap/9.3.4/customwidgetapi_landing.html)
-  - [Domino Leap 1.1.3](https://help.hcltechsw.com/domino-leap/1.1.3/customwidgetapi_landing.html)
+  - [Custom Widget API - Leap 9.3.7](https://opensource.hcltechsw.com/leap-doc/9.3.7/customwidgetapi_landing.html)
+  - [Custom Widget API - Domino Leap 1.1.5](https://help.hcl-software.com/domino-leap/1.1.5/customwidgetapi_landing.html)
 
 ## Samples
 Various samples are available in the [Samples](./samples) directory.  

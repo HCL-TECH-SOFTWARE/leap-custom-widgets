@@ -1,0 +1,15 @@
+/*
+  Code for ColorPicker widget
+  ===========================
+*/
+
+.colorPickerIcon {
+  width: 16px;
+  height: 16px;
+  background-image: url("assets/color-palette.svg");
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}

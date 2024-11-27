@@ -33,7 +33,7 @@ const signatureWidget = {
 
     // initialize widget in the DOM
     instantiate: (context, domNode, initialProps, eventManager) => {
-        let rootNode, titleNode, clearBtn, signaturePad;
+        let rootNode, titleNode, clearBtn, signaturePad, jsonValue;
 
         const widgetInstance = {
             /**
@@ -63,11 +63,26 @@ const signatureWidget = {
             },
 
             setValue: function (value) {
-                signaturePad.fromData(JSON.parse(value));
+                jsonValue = value;
+                if (value) {
+                    try {
+                        const val = JSON.parse(value)
+                        try {
+                            signaturePad.fromData(val);
+                            rootNode.querySelector(':scope .hcl-leap-sample-error').innerHTML = '';
+                        } catch (err) {
+                            rootNode.querySelector(':scope .hcl-leap-sample-error').innerHTML = `Invalid signature data: ${err.message}`;
+                            signaturePad.fromData([]);
+                        }
+                    } catch (err) {
+                        rootNode.querySelector(':scope .hcl-leap-sample-error').innerHTML = 'Invalid signature data. It might be encrypted.';
+                        signaturePad.fromData([]);
+                    }
+                }
             },
 
             getValue: function () {
-                return JSON.stringify(signaturePad.toData());
+                return jsonValue;
             },
 
             getDisplayTitle: function () {
@@ -78,11 +93,14 @@ const signatureWidget = {
         domNode.innerHTML = '' +
             '<div class="hcl-leap-sample-signature">' +
             '   <h3 class="hcl-leap-sample-title"><!-- title will go here --></h3>' +
-            '   <canvas width="500" height="200"></canvas>' +
-            '   <div class="hcl-leap-sample-footer">' +
-            '      <div style="display: inline-block">Use your mouse to sign in the box above</div>' +
-            '      <button class="hcl-leap-sample-button">Clear</button>' +
+            '   <div class="hcl-leap-sample-content">' + 
+            '      <canvas width="500" height="200"></canvas>' +
+            '      <div class="hcl-leap-sample-footer">' +
+            '         <div style="display: inline-block">Use your mouse to sign in the box above</div>' +
+            '         <button class="hcl-leap-sample-button">Clear</button>' +
+            '      </div>' +
             '   </div>' +
+            '   <div class="hcl-leap-sample-error" style="color:red"></div>' +
             '</div>';
 
         rootNode = domNode.firstElementChild;
@@ -91,6 +109,7 @@ const signatureWidget = {
         const canvas = domNode.querySelector(':scope canvas');
         signaturePad = new SignaturePad(canvas);
         signaturePad.addEventListener("endStroke", () => {
+            jsonValue = JSON.stringify(signaturePad.toData());
             eventManager.sendEvent('onChange');
         });
         clearBtn.addEventListener('click', () => {
